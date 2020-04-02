@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <ul>
+
+              <li style="padding:15px">QR Code Generator</li>
+            </ul>
+            <ul>
+              <li><a href="#home">Home</a></li>
+            </ul>
+      </header>
+        
+        <div class="hero-image" id="home">
+            <div class = "hero-text">
+              <h1 style="font-size:50px">Please enter the text.</h1>
+              <form action="ConvertQR" method="post">
+              <input type="text" name="textbox" class="tbox" placeholder="Please Enter the Text">
+              <br>
+              
+              <button type="submit"  class="button button1">Submit</button>
+            </form>
+              <button class="button button1" onclick="myFunction()"> View QRCode</button>
+              <img id="disp" style="display:none;" class="tbox">
+                        
+            </div></div>
+    </body>
+</html>
